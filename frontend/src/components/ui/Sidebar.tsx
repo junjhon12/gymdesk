@@ -40,7 +40,7 @@ function Sidebar() {
 
       {/* Footer */}
       <div className="p-4 border-t border-gray-800">
-        <p className="text-xs text-gray-600">GymDesk v1.0.0</p>
+        <p className="text-xs text-gray-600">GymDesk - In Progress</p>
       </div>
 
     </aside>
