@@ -1,7 +1,6 @@
 export type MemberStatus = 'active' | 'inactive';
 export type MembershipType = 'monthly' | 'annual';
 
-// Mirrors MemberRead from our Pydantic schema
 export interface Member {
   id: number;
   full_name: string;
@@ -16,7 +15,6 @@ export interface Member {
   updated_at: string;
 }
 
-// Mirrors MemberCreate
 export interface MemberCreate {
   full_name: string;
   email: string;
@@ -28,7 +26,6 @@ export interface MemberCreate {
   last_payment_date?: string;
 }
 
-// Mirrors MemberUpdate — all optional
 export interface MemberUpdate {
   full_name?: string;
   email?: string;
@@ -40,7 +37,6 @@ export interface MemberUpdate {
   last_payment_date?: string;
 }
 
-// Chat types for later
 export interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;

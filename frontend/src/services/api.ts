@@ -1,4 +1,4 @@
-import { Member, MemberCreate, MemberUpdate } from '../types';
+import type { Member, MemberCreate, MemberUpdate } from '../types/index'
 
 // Single source of truth for the API base URL
 // If we ever change ports or deploy, we change it here only
