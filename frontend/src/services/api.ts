@@ -1,4 +1,5 @@
-import type { Member, MemberCreate, MemberUpdate } from '../types/index'
+import type { Member, MemberCreate, MemberUpdate, ChatMessage } from '../types/index'
+
 
 // Single source of truth for the API base URL
 // If we ever change ports or deploy, we change it here only
@@ -55,3 +56,19 @@ export const membersApi = {
   },
 
 };
+
+// ---
+// Chat API
+// ---
+export const chatApi = {
+  sendMessage: async (messages: ChatMessage[]): Promise<string> => {
+    const res = await fetch(`${BASE_URL}/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages }),
+    })
+    if (!res.ok) throw new Error('Failed to send message')
+    const data = await res.json()
+    return data.response
+  }
+}
