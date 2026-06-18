@@ -40,13 +40,7 @@ function ChatBox() {
   }
 
   return (
-    <div className="flex flex-col h-full bg-gray-900 rounded-xl border border-gray-800">
-
-      {/* Header */}
-      <div className="p-4 border-b border-gray-800">
-        <h2 className="text-sm font-semibold text-white">🤖 GymDesk AI</h2>
-        <p className="text-xs text-gray-500 mt-0.5">Ask anything about your members</p>
-      </div>
+    <div className="flex flex-col h-full bg-gray-900 border border-gray-800">
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">

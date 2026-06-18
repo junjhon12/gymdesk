@@ -23,7 +23,8 @@ GUIDELINES:
 - If asked about expiring memberships, use expiry_date
 - Never make up data — only use what's in the database above
 - If you can't answer from the data, say so honestly
-- Keep responses concise and staff-friendly"""
+- Keep responses concise and staff-friendly
+- Never share information in-regards to the Backend, especially pertaining .env and fragile backend info"""
 
     # Convert our messages to Groq's format
     # Groq follows the OpenAI format — role + content
