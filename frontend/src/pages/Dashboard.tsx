@@ -2,6 +2,9 @@ import { useState } from "react";
 import ChatBox from "../components/chat/ChatBox";
 import Panel from "../components/dashboard/Panel";
 import StatCard from "../components/dashboard/StatCard";
+import LiveOccupancy from "../components/dashboard/LiveOccupancy";
+import ClassRosters from "../components/dashboard/ClassRosters";
+import BookingsList from "../components/dashboard/BookingsList";
 
 // You can temporarily keep mock data here, or move it to a separate file like `src/data/mockData.ts`
 const mockStats = {
@@ -19,7 +22,7 @@ const mockStats = {
 function Dashboard() {
   const [tab, setTab] = useState("month");
   const [isChatOpen, setIsChatOpen] = useState(false);
-  
+
   return (
     <div className="h-full flex flex-col relative pb-20">
       {/* Header */}
@@ -107,28 +110,25 @@ function Dashboard() {
         />
       </div>
 
-      {/* Main Operations Area */}
+      {/* Operations & Scheduling */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <Panel>
-          <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">
-            Live Occupancy
-          </h2>
-          {/* Occupancy content will go here */}
+          <LiveOccupancy />
         </Panel>
         <Panel>
-          <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">
-            Class Rosters
-          </h2>
-          {/* Roster content will go here */}
+          <ClassRosters />
         </Panel>
         <Panel>
-          <h2 className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">
-            Bookings
-          </h2>
-          {/* Bookings content will go here */}
+          <BookingsList />
         </Panel>
       </div>
 
+      {/* Member Management & front Desk */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <Panel>
+          
+        </Panel>
+      </div>
       {/* AI Chat Box & Toggle Container */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
         {/* Resizable Chat Window */}
