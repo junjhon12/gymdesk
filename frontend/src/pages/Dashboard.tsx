@@ -11,6 +11,10 @@ import MemberNotices from "../components/dashboard/MemberNotices";
 import MyTasks from "../components/dashboard/MyTasks";
 import PayrollCommissions from "../components/dashboard/PayrollCommissions";
 import StaffRoster from "../components/dashboard/StaffRoster";
+import DailySales from "../components/dashboard/DailySales";
+import OverduePayments from "../components/dashboard/OverduePayments";
+import RevenueSummary from "../components/dashboard/RevenueSummary";
+import RecentActivity from "../components/dashboard/RecentActivity";
 
 const mockStats = {
   activeMembers: 187,
@@ -153,19 +157,17 @@ function Dashboard() {
       {/* Staff & Task Management */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <Panel>
-          {/* My Tasks */}
+          <OverduePayments/>
         </Panel>
         <Panel>
-          {/* Staff Roster */}
+          <DailySales/>
         </Panel>
         <Panel>
-          {/* Payroll & Commissions */}
+          <RevenueSummary currentTab={tab}/>
         </Panel>
-        <Panel className="col-span-full">
-            {/* Recent Member Activity */}
-        </Panel>  
       </div>
       
+      <RecentActivity/>
       
       {/* AI Chat Box & Toggle Container */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">

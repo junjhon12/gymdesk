@@ -65,3 +65,31 @@ export const payrollData = [
   { name: "Coach Mia", sessions: 24, rate: 25, bonus: 0 },
   { name: "Coach Ray", sessions: 31, rate: 25, bonus: 75 },
 ];
+
+export const overduePayments = [
+  { name: "Carlos Rivera", amount: 49.99, overdueDays: 5, plan: "Monthly" },
+  { name: "Aisha Patel", amount: 49.99, overdueDays: 2, plan: "Monthly" },
+  { name: "Greg Mason", amount: 499.99, overdueDays: 14, plan: "Annual" },
+];
+
+export const dailySales = [
+  { item: "Day Pass", qty: 4, total: 60 },
+  { item: "Protein Shake", qty: 7, total: 49 },
+  { item: "New Monthly Membership", qty: 2, total: 99.98 },
+  { item: "Resistance Bands", qty: 3, total: 44.97 },
+];
+
+// Re-exporting the comprehensive mockStats we used at the very beginning
+export const revenueStats = {
+  week: { revenue: 420 },
+  month: { revenue: 3840 },
+  year: { revenue: 38200 },
+};
+
+export const recentActivity = [
+  { name: "James Okafor", action: "joined", plan: "Annual", time: "2h ago", type: "join" },
+  { name: "Maria Santos", action: "renewed", plan: "Monthly", time: "5h ago", type: "renew" },
+  { name: "Derek Liu", action: "deactivated", plan: "Monthly", time: "Yesterday", type: "cancel" },
+  { name: "Priya Mehta", action: "joined", plan: "Monthly", time: "Yesterday", type: "join" },
+  { name: "Ben Carter", action: "renewed", plan: "Annual", time: "2 days ago", type: "renew" },
+];
