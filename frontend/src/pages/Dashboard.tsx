@@ -5,8 +5,10 @@ import StatCard from "../components/dashboard/StatCard";
 import LiveOccupancy from "../components/dashboard/LiveOccupancy";
 import ClassRosters from "../components/dashboard/ClassRosters";
 import BookingsList from "../components/dashboard/BookingsList";
+import CheckInLog from "../components/dashboard/CheckInLog";
+import AlertsFlags from "../components/dashboard/AlertsFlags";
+import MemberNotices from "../components/dashboard/MemberNotices";
 
-// You can temporarily keep mock data here, or move it to a separate file like `src/data/mockData.ts`
 const mockStats = {
   activeMembers: 187,
   inactiveMembers: 23,
@@ -51,7 +53,7 @@ function Dashboard() {
       </div>
 
       {/* KPI Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
           label="Active Members"
           value={mockStats.activeMembers}
@@ -109,8 +111,7 @@ function Dashboard() {
           bgGradientClass="bg-gradient-to-br from-[#0f1117] to-indigo-900/10 border-indigo-500/20"
         />
       </div>
-
-      {/* Operations & Scheduling */}
+      <div className="text-amber-50 py-2 text-sm">-- Operations & Scheduling</div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <Panel>
           <LiveOccupancy />
@@ -122,13 +123,47 @@ function Dashboard() {
           <BookingsList />
         </Panel>
       </div>
-
-      {/* Member Management & front Desk */}
+      <div className="text-amber-50 py-2 text-sm">-- Member Management & Front Desk</div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <Panel>
-          
+          <CheckInLog/>
+        </Panel>
+        <Panel>
+          {/* Alerts & Flags */}
+          <AlertsFlags/>
+        </Panel>
+        <MemberNotices/>
+      </div>
+      <div className="text-amber-50 py-2 text-sm">-- Staff & Task Management</div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <Panel>
+          {/* My Tasks */}
+        </Panel>
+        <Panel>
+          {/* Staff Roster */}
+        </Panel>
+        <Panel>
+          {/* Payroll & Commissions */}
         </Panel>
       </div>
+      <div className="text-amber-50 py-2 text-sm">-- Sales & Finance</div>
+      {/* Staff & Task Management */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <Panel>
+          {/* My Tasks */}
+        </Panel>
+        <Panel>
+          {/* Staff Roster */}
+        </Panel>
+        <Panel>
+          {/* Payroll & Commissions */}
+        </Panel>
+        <Panel className="col-span-full">
+            {/* Recent Member Activity */}
+        </Panel>  
+      </div>
+      
+      
       {/* AI Chat Box & Toggle Container */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
         {/* Resizable Chat Window */}
