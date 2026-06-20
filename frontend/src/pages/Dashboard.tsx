@@ -8,6 +8,9 @@ import BookingsList from "../components/dashboard/BookingsList";
 import CheckInLog from "../components/dashboard/CheckInLog";
 import AlertsFlags from "../components/dashboard/AlertsFlags";
 import MemberNotices from "../components/dashboard/MemberNotices";
+import MyTasks from "../components/dashboard/MyTasks";
+import PayrollCommissions from "../components/dashboard/PayrollCommissions";
+import StaffRoster from "../components/dashboard/StaffRoster";
 
 const mockStats = {
   activeMembers: 187,
@@ -137,13 +140,13 @@ function Dashboard() {
       <div className="text-amber-50 py-2 text-sm">-- Staff & Task Management</div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <Panel>
-          {/* My Tasks */}
+          <MyTasks/>
         </Panel>
         <Panel>
-          {/* Staff Roster */}
+          <StaffRoster/>
         </Panel>
         <Panel>
-          {/* Payroll & Commissions */}
+          <PayrollCommissions/>
         </Panel>
       </div>
       <div className="text-amber-50 py-2 text-sm">-- Sales & Finance</div>

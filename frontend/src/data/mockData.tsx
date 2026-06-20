@@ -44,3 +44,24 @@ export const expiringMembers = [
   { name: "Tom Nguyen", plan: "Monthly", expiry: "Jun 28", daysLeft: 10 },
   { name: "Sara Kim", plan: "Monthly", expiry: "Jun 30", daysLeft: 12 },
 ];
+
+export const initialTasks = [
+  { id: 1, text: "Follow up with Derek Liu (no visit in 30 days)", priority: "high", done: false },
+  { id: 2, text: "Call Carlos Rivera about expired membership", priority: "high", done: false },
+  { id: 3, text: "Send welcome email to new members this week", priority: "medium", done: false },
+  { id: 4, text: "Review guest leads from Saturday", priority: "medium", done: true },
+  { id: 5, text: "Update class schedule for July", priority: "low", done: true },
+];
+
+export const staff = [
+  { name: "Coach Dana", role: "Trainer", shift: "7AM – 3PM", status: "on" },
+  { name: "Coach Mia", role: "Trainer", shift: "9AM – 5PM", status: "on" },
+  { name: "Coach Ray", role: "Trainer", shift: "11AM – 7PM", status: "off" },
+  { name: "Alex Front", role: "Front Desk", shift: "6AM – 2PM", status: "on" },
+];
+
+export const payrollData = [
+  { name: "Coach Dana", sessions: 38, rate: 25, bonus: 150 },
+  { name: "Coach Mia", sessions: 24, rate: 25, bonus: 0 },
+  { name: "Coach Ray", sessions: 31, rate: 25, bonus: 75 },
+];
