@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/ui/Layout'
 import Dashboard from './pages/Dashboard'
 import Members from './pages/Members'
-import MemberDetail from './pages/MemberDetail'
+import MemberDetail from './components/dashboard/MemberDetail'
 
 function App() {
   return (
