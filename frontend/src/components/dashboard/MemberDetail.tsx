@@ -27,6 +27,7 @@ export default function MemberDetail() {
         const data = await membersApi.getOne(Number(id));
         setMember(data);
         setForm(data);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError('Member not found');
       } finally {
@@ -48,7 +49,8 @@ export default function MemberDetail() {
       const updated = await membersApi.update(member.id, form);
       setMember(updated);
       setForm(updated);
-      setEditing(false); // Lock the UI back to viewing mode
+      setEditing(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       console.error("Failed to update member");
     } finally {
@@ -76,7 +78,7 @@ export default function MemberDetail() {
               <h1 className="text-3xl font-bold text-white flex items-center gap-3">
                 {member.full_name}
                 <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider -translate-y-0.5 ${
-                  member.status === 'Active' ? 'bg-green-900/30 text-green-400' : 'bg-red-900/30 text-red-400'
+                  member.status === 'active' ? 'bg-green-900/30 text-green-400' : 'bg-red-900/30 text-red-400'
                 }`}>
                   {member.status}
                 </span>
