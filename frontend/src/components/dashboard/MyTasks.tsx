@@ -28,7 +28,7 @@ export default function MyTasks() {
             }`}
           >
             {/* Custom Checkbox */}
-            <div className={`w-4 h-4 mt-0.5 rounded flex-shrink-0 border flex items-center justify-center transition-colors ${
+            <div className={`w-4 h-4 mt-0.5 rounded shrink-0 border flex items-center justify-center transition-colors ${
               t.done ? "bg-green-500/20 border-green-500 text-green-500" : "border-gray-600"
             }`}>
               {t.done && <span className="text-[10px] font-bold">✓</span>}
