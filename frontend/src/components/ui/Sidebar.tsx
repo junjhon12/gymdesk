@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
 
-// NavLink is like <a> but React Router aware
-// It automatically applies an active style when the route matches
 const navItems = [
-  { label: 'Dashboard', path: '/', icon: '📊' },
-  { label: 'Members',   path: '/members', icon: '👥' },
-]
+  { label: 'Dashboard',  path: '/',           icon: '📊' },
+  { label: 'Members',    path: '/members',    icon: '👥' },
+  { label: 'Finance',    path: '/finance',    icon: '💰' },
+  { label: 'Operations', path: '/Operations', icon: '⚙️' },
+  { label: 'Staff',      path: '/staff',      icon: '👤' },
+];
 
 function Sidebar() {
   return (
