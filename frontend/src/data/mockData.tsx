@@ -93,3 +93,52 @@ export const recentActivity = [
   { name: "Priya Mehta", action: "joined", plan: "Monthly", time: "Yesterday", type: "join" },
   { name: "Ben Carter", action: "renewed", plan: "Annual", time: "2 days ago", type: "renew" },
 ];
+
+// Finance
+export const mockSummary = {
+  totalRevenue: 3840,
+  growthPct: 2.4,
+  collected: 3240,
+  outstanding: 599.97,
+  transactionsCount: 55,
+};
+
+export const mockOverduePayments = [
+  { id: 1, name: "Carlos Rivera", plan: "Monthly", amount: 49.99, daysOverdue: 5, lastContacted: "Never contacted" },
+  { id: 2, name: "Aisha Patel", plan: "Monthly", amount: 49.99, daysOverdue: 2, lastContacted: "Jun 14" },
+  { id: 3, name: "Greg Mason", plan: "Annual", amount: 499.99, daysOverdue: 14, lastContacted: "Jun 02" },
+];
+
+export const mockTransactions = [
+  { id: "TXN-0041", member: "James Okafor", description: "Membership Renewal", amount: 499.99, method: "Card", status: "Paid", date: "2026-06-01" },
+  { id: "TXN-0042", member: "Maria Santos", description: "Membership Renewal", amount: 49.99, method: "Card", status: "Paid", date: "2026-06-10" },
+  { id: "TXN-0043", member: "Walk-in", description: "Day Pass", amount: 15.00, method: "Cash", status: "Paid", date: "2026-06-11" },
+  { id: "TXN-0044", member: "Aisha Patel", description: "Membership Renewal", amount: 49.99, method: "Card", status: "Failed", date: "2026-06-12" },
+  { id: "TXN-0045", member: "Priya Mehta", description: "Membership Renewal", amount: 49.99, method: "Card", status: "Paid", date: "2026-06-15" },
+  { id: "TXN-0046", member: "Walk-in", description: "Protein Shake x3", amount: 20.97, method: "Cash", status: "Paid", date: "2026-06-15" },
+  { id: "TXN-0047", member: "Tyler Brooks", description: "Membership Renewal", amount: 49.99, method: "Card", status: "Paid", date: "2026-06-05" },
+  { id: "TXN-0048", member: "Carlos Rivera", description: "Membership Renewal", amount: 49.99, method: "Card", status: "Overdue", date: "2026-06-01" },
+  { id: "TXN-0049", member: "Walk-in", description: "Resistance Bands x2", amount: 29.98, method: "Cash", status: "Paid", date: "2026-06-16" },
+  { id: "TXN-0050", member: "Greg Mason", description: "Membership Renewal", amount: 499.99, method: "Card", status: "Overdue", date: "2026-06-01" },
+  { id: "TXN-0051", member: "Ben Carter", description: "Membership Renewal", amount: 499.99, method: "Card", status: "Paid", date: "2026-05-30" },
+  { id: "TXN-0052", member: "Lena Cho", description: "Membership Renewal", amount: 49.99, method: "Card", status: "Paid", date: "2026-06-12" },
+  { id: "TXN-0053", member: "Walk-in", description: "Day Pass", amount: 15.00, method: "Cash", status: "Paid", date: "2026-06-17" },
+  { id: "TXN-0054", member: "Marcus Webb", description: "PT Session x4", amount: 200.00, method: "Card", status: "Paid", date: "2026-06-01" },
+  { id: "TXN-0055", member: "Fatima Al-Rashid", description: "Membership Renewal", amount: 49.99, method: "Card", status: "Overdue", date: "2026-06-01" },
+];
+
+export const mockMonthlyTrend = [
+  { month: "Jan", amount: 3100, heightPct: "70%" },
+  { month: "Feb", amount: 3250, heightPct: "75%" },
+  { month: "Mar", amount: 3400, heightPct: "82%" },
+  { month: "Apr", amount: 3600, overTarget: 100, heightPct: "88%" },
+  { month: "May", amount: 3750, overTarget: 250, heightPct: "92%" },
+  { month: "Jun", amount: 3840, overTarget: 340, heightPct: "100%", isCurrent: true },
+];
+
+export const mockRevenueTypes = [
+  { label: "Monthly Memberships", share: 46, amount: 1749.65, color: "bg-blue-500", textDot: "text-blue-500" },
+  { label: "Annual Memberships", share: 39, amount: 1499.97, color: "bg-purple-500", textDot: "text-purple-500" },
+  { label: "PT Sessions", share: 10, amount: 400.00, color: "bg-amber-500", textDot: "text-amber-500" },
+  { label: "POS / Day Passes", share: 5, amount: 195.93, color: "bg-green-500", textDot: "text-green-500" },
+];
