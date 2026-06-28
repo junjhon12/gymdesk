@@ -2,7 +2,7 @@ import { useState } from "react";
 import MetricCardRow from "../components/finance/MetricCardRow";
 import RevenueOverviewZone from "../components/finance/RevenueOverviewZone";
 import OverdueCollections from "../components/finance/OverdueCollections";
-import TransactionHistory from "../components/finance/Transactionhistory";
+import TransactionHistory from "../components/finance/TransactionHistory";
 
 export default function Finance() {
   const [timeTab, setTimeTab] = useState("month");
