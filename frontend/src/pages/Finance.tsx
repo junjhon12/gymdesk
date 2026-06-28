@@ -1,12 +1,14 @@
 import { useState } from "react";
 import MetricCardRow from "../components/finance/MetricCardRow";
+import RevenueOverviewZone from "../components/finance/RevenueOverviewZone";
 
 export default function Finance() {
   const [timeTab, setTimeTab] = useState("month");
 
   return (
     <div className="h-full flex flex-col relative pb-10 space-y-6">
-    
+      
+      {/* ── Page Header ── */}
       <div className="flex justify-between items-start">
         <div>
           <h1 className="text-2xl font-bold text-white m-0">Finance</h1>
@@ -19,6 +21,7 @@ export default function Finance() {
         </button>
       </div>
 
+      {/* ── Time Interval Switcher ── */}
       <div className="flex gap-1 bg-[#0f1117] border border-gray-800 rounded-lg p-1 w-fit">
         {["week", "month", "year"].map((t) => (
           <button
@@ -35,11 +38,11 @@ export default function Finance() {
         ))}
       </div>
 
+      {/* ── Component 1: Metric Cards ── */}
       <MetricCardRow />
 
-      <div className="text-gray-600 text-xs italic pt-4 border-t border-gray-900">
-        Ready for the next block...
-      </div>
+      {/* ── Component 2: Revenue Overview Zone ── */}
+      <RevenueOverviewZone />
 
       <div className="text-gray-600 text-xs italic pt-4 border-t border-gray-900">
         Ready for the next block...
