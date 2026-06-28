@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MetricCardRow from "../components/finance/MetricCardRow";
 import RevenueOverviewZone from "../components/finance/RevenueOverviewZone";
+import OverdueCollections from "../components/finance/OverdueCollections";
 
 export default function Finance() {
   const [timeTab, setTimeTab] = useState("month");
@@ -38,15 +39,9 @@ export default function Finance() {
         ))}
       </div>
 
-      {/* ── Component 1: Metric Cards ── */}
       <MetricCardRow />
-
-      {/* ── Component 2: Revenue Overview Zone ── */}
       <RevenueOverviewZone />
-
-      <div className="text-gray-600 text-xs italic pt-4 border-t border-gray-900">
-        Ready for the next block...
-      </div>
+      <OverdueCollections/>
 
       <div className="text-gray-600 text-xs italic pt-4 border-t border-gray-900">
         Ready for the next block...

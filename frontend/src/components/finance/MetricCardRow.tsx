@@ -3,7 +3,7 @@ import { mockSummary } from "../../data/mockData";
 export default function MetricCardRow() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-gradient-to-br from-[#0f1117] to-green-950/5">
+      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-linear-to-br from-[#0f1117] to-green-950/5">
         <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
           Total Revenue
         </div>
@@ -15,7 +15,7 @@ export default function MetricCardRow() {
         </div>
       </div>
 
-      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-gradient-to-br from-[#0f1117] to-blue-950/5">
+      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-linear-to-br from-[#0f1117] to-blue-950/5">
         <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
           Collected
         </div>
@@ -25,7 +25,7 @@ export default function MetricCardRow() {
         <div className="text-[11px] text-gray-500 mt-1">successfully processed</div>
       </div>
 
-      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-gradient-to-br from-[#0f1117] to-amber-950/5">
+      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-linear-to-br from-[#0f1117] to-amber-950/5">
         <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
           Outstanding
         </div>
@@ -35,7 +35,7 @@ export default function MetricCardRow() {
         <div className="text-[11px] text-gray-500 mt-1">awaiting payment</div>
       </div>
 
-      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-gradient-to-br from-[#0f1117] to-purple-950/5">
+      <div className="bg-[#0f1117] border border-gray-800/60 rounded-xl p-5 bg-linear-to-br from-[#0f1117] to-purple-950/5">
         <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">
           Transactions
         </div>
