@@ -11,7 +11,7 @@ export default function OverdueCollections() {
         Overdue & Collections
       </div>
 
-      <Panel className="!p-0 overflow-hidden">
+      <Panel className="p-0! overflow-hidden">
         {/* Table Header Section */}
         <div className="p-4 flex justify-between items-center border-b border-gray-800/50 bg-gray-900/10">
           <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider m-0">
