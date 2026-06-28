@@ -74,7 +74,8 @@ export default defineConfig([
 
 cd backend
 pip install -r requirements.txt
-uvicorn main:app --reload
+venv\Scripts\activate
+uvicorn app.main:app --reload
 
 cd frontend
 npm install
